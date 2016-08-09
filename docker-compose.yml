@@ -1,0 +1,22 @@
+banco:
+    image: mysql:5.6
+    restart: always
+    environment:
+        - MYSQL_ROOT_PASSWORD=sonar
+        - MYSQL_DATABASE=sonar
+        - MYSQL_USER=sonar
+        - MYSQL_PASSWORD=sonar
+    ports:
+        - "3306:3306"
+web:
+    image: sonarqube
+    restart: always
+    ports:
+        - "9000:9000"
+    environment:
+        - SONARQUBE_JDBC_USERNAME=sonar
+        - SONARQUBE_JDBC_PASSWORD=sonar
+        - SONARQUBE_JDBC_URL=jdbc:mysql://10.100.50.86/sonar?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&useConfigs=maxPerformance
+    volumes:
+        - "./sonar_conf:/opt/sonarqube/conf"
+        - "./sonar_plugins:/opt/sonarqube/extensions/plugins"
