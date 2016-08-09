@@ -16,7 +16,7 @@ web:
     environment:
         - SONARQUBE_JDBC_USERNAME=sonar
         - SONARQUBE_JDBC_PASSWORD=sonar
-        - SONARQUBE_JDBC_URL=jdbc:mysql://10.100.50.86/sonar?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&useConfigs=maxPerformance
+        - SONARQUBE_JDBC_URL=jdbc:mysql://192.168.0.10/sonar?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&useConfigs=maxPerformance
     volumes:
         - "./sonar_conf:/opt/sonarqube/conf"
         - "./sonar_plugins:/opt/sonarqube/extensions/plugins"
