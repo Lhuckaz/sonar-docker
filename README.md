@@ -38,7 +38,7 @@ Ao final das configurações, executar:
     docker-compose up
 
 Acessar http://\<host\>:9000 <br />
-Usuario: admin <br />
-Senha: admin
+**Usuario:** admin <br />
+**Senha:** admin
 
 **Obs.:** Para nao utilizar LDAP apagar todas as configuraçoes do LDAP e o plugin da pasta ``/sonar_plugins``
