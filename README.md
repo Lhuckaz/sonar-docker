@@ -40,3 +40,5 @@ Ao final das configurações, executar:
 Acessar http://\<host\>:9000 
 Usuario: admin
 Senha: admin
+
+**Obs.:** Para nao utilizar LDAP apagar todas as configuraçoes do LDAP e o plugin da pasta ``/sonar_plugins``
