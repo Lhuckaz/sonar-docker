@@ -6,7 +6,7 @@ Executar:
     git clone https://github.com/Lhuckaz/sonar-ldap-docker.git
     cd sonar-ldap-docker
 
-Trocar em docker-compose.yml o PGHOST para o IP do seu host
+Trocar em docker-compose.yml o SONARQUBE_JDBC_URL para o IP do seu host
 
     environment:
         - SONARQUBE_JDBC_USERNAME=sonar
